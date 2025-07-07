@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* Nature-inspired color palette */
+  --primary-green: #4caf50;
+  --primary-green-light: #66bb6a;
+  --primary-green-dark: #43a047;
+  --accent-green: #81c784;
+  --accent-green-light: #a5d6a7;
+  --text-dark: #2d5a2d;
+  --text-medium: #5a7c5a;
+  --text-light: #a5d6a7;
+  --white: #ffffff;
+  --background-light: #f0f8f0;
+  --background-gradient: linear-gradient(135deg, #e8f5e8 0%, #f0f8f0 50%, #e0f2e0 100%);
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(76, 175, 80, 0.15);
+  --shadow-medium: 0 8px 30px rgba(76, 175, 80, 0.2);
+  --shadow-strong: 0 20px 60px rgba(0, 0, 0, 0.1);
+  
+  /* Border radius */
+  --radius-sm: 10px;
+  --radius-md: 15px;
+  --radius-lg: 25px;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.4s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background: var(--background-gradient);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* Selection styles */
+::selection {
+  background-color: var(--primary-green);
+  color: white;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
